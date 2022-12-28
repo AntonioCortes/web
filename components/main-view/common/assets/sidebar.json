@@ -1,0 +1,44 @@
+{
+    "pageContent" : [
+        {
+            "text" : "Submenu 1",
+            "contentId" : "submenu-1",
+            "content" : [
+                {
+                    "text" : "content 1",
+                    "content" : "mainView.paths.content1"
+                },
+                {
+                    "text" : "content 2",
+                    "content" : "mainView.paths.content2"
+                }
+            ]
+
+        },
+        {
+            "text" : "Submenu 2",
+            "contentId" : "submenu-2",
+            "content" : [
+                {
+                    "text" : "content 3",
+                    "content" : "mainView.paths.content3"
+                },
+                {
+                    "text" : "content 4",
+                    "content" : "mainView.paths.content4"
+                }
+            ]
+
+        }
+    ],
+    "links" : [
+        {
+            "text" : "Download Source",
+            "href" : "https://bootstrapious.com/tutorial/files/sidebar.zip"
+        },
+        {
+            "text" : "Bootstrap Sidebar",
+            "href" : "https://bootstrapious.com/p/bootstrap-sidebar"
+        }
+    ]
+}

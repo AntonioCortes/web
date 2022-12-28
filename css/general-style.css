@@ -1,0 +1,14 @@
+html, body {
+    height: 100vh;
+}
+
+body {
+    padding-top: 66px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}

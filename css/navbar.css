@@ -1,0 +1,23 @@
+.navbar {
+    z-index: 2;
+}
+
+.brand-container {
+    width: 240px;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+#sidebarCollapse {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+
+}
+
+#sidebarCollapse > i {
+    font-size: 2rem;
+    color: white;
+}

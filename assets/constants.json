@@ -1,0 +1,52 @@
+{
+    "common" : {
+        "paths" : {
+            "navbar" : "components/common/navbar.html",
+            "sidebar" : "components/common/sidebar.html"
+        }
+    },
+    "mainView" : {
+        "topic" : "Main Topic",
+        "mainContent" : "content1",
+        "paths" : {
+            "logo" : "components/main-view/common/assets/img/bootstrap.svg",
+            "sidebar" : "components/main-view/common/assets/sidebar.json",
+            "content1" : {
+                "basePath" : "components/main-view/content-1",
+                "html" : "content-1.html",
+                "css" : "content-1.css",
+                "js" : "content-1.js"
+            },
+            "content2" : {
+                "basePath" : "components/main-view/content-2",
+                "html" : "content-2.html",
+                "css" : "content-2.css",
+                "js" : "content-2.js"
+            },
+            "content3" : {
+                "basePath" : "components/main-view/content-3",
+                "html" : "content-3.html" 
+            },
+            "content4" : {
+                "basePath" : "components/main-view/content-4",
+                "html" : "content-4.html" 
+            }
+        }
+    },
+    "anotherView" : {
+        "topic" : "Another Topic",
+        "mainContent" : "content1",
+        "paths" : {
+            "logo" : "components/another-view/common/assets/img/bootstrap-4.svg",
+            "sidebar" : "components/another-view/common/assets/sidebar.json",
+            "content1" : {
+                "basePath" : "components/another-view/content-1",
+                "html" : "content-1.html" 
+            },
+            "content2" : {
+                "basePath" : "components/another-view/content-2",
+                "html" : "content-2.html" 
+            }
+        }
+    }
+}

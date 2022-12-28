@@ -1,0 +1,21 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+                
+        <div class="brand-container">
+            <button type="button" id="sidebarCollapse" class="btn" onclick="toggleSidebar()">
+                <i class="bi bi-list"></i>
+            </button>
+            
+            <img id="logo" height="40px">
+            
+            <a id="nav-topic" class="navbar-brand" href="#" onclick="changeView('mainView')"></a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div id="navbar-navlinks" class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#" onclick="changeView('mainView')">Main View</a>
+                <a class="nav-link active" href="#" onclick="changeView('anotherView')">Another View</a>
+            </div>
+        </div>
+    </div>
+</nav>

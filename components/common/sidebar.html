@@ -1,0 +1,21 @@
+<div class="sidebar-header">
+    <h3 id="sidebar-header"></h3>
+</div>
+
+<ul class="list-unstyled" id="page-content">
+    <li class="padding-5">
+        <input id="searchbar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" oninput="filterMenus()">
+    </li>
+
+    <li id="sidebar-navlinks">
+        <div name="divider"></div>
+
+        <a href="#sidebar-navlinks-ul" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-navlinks-ul">
+            Navigation Links 
+            <img name="arrow_menu" src="components/common/assets/svg/simple-arrow.svg">
+        </a>
+        <ul id="sidebar-navlinks-ul" class="collapse show list-unstyled"></ul>
+
+        <div name="divider"></div>
+    </li>
+</ul>
