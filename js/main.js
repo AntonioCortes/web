@@ -1,5 +1,5 @@
 let constants = null;
-const mainView = 'mainView';
+const mainView = 'angular';
 
 $(document).ready(function () 
 {
