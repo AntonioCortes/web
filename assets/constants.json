@@ -7,22 +7,63 @@
     },
     "angular" : {
         "topic" : "Angular",
-        "mainContent" : "introduccion",
+        "mainContent" : "introductionPage",
         "paths" : {
             "logo" : "components/angular/common/assets/img/angular-icon.png",
             "sidebar" : "components/angular/common/assets/sidebar.json",
-            "introduccion" : {
-                "basePath" : "components/angular/introduccion",
-                "html" : "introduccion.html"
+            "introductionPage" : {
+                "basePath" : "components/angular/introductionPage",
+                "html" : "introductionPage.html"
             },
-            "estructura" : {
-                "basePath" : "components/angular/estructura",
-                "html" : "estructura.html"
+            "structurePage" : {
+                "basePath" : "components/angular/structurePage",
+                "html" : "structurePage.html"
             },
-            "configuracion" : {
-                "basePath" : "components/angular/configuracion",
-                "html" : "configuracion.html"
+            "configPage" : {
+                "basePath" : "components/angular/configPage",
+                "html" : "configPage.html"
+            },
+            "componentsPage" : {
+                "basePath" : "components/angular/componentsPage",
+                "html" : "componentsPage.html"
+            },
+            "guardsPage" : {
+                "basePath" : "components/angular/guardsPage",
+                "html" : "guardsPage.html"
+            },
+            "modulesPage" : {
+                "basePath" : "components/angular/modulesPage",
+                "html" : "modulesPage.html"
+            },
+            "servicesPage" : {
+                "basePath" : "components/angular/servicesPage",
+                "html" : "servicesPage.html"
+            },
+            "testPage" : {
+                "basePath" : "components/angular/testPage",
+                "html" : "testPage.html"
+            },
+            "cliPage" : {
+                "basePath" : "components/angular/cliPage",
+                "html" : "cliPage.html"
+            },
+            "modelPage" : {
+                "basePath" : "components/angular/modelPage",
+                "html" : "modelPage.html"
+            },
+            "routerPage" : {
+                "basePath" : "components/angular/routerPage",
+                "html" : "routerPage.html"
+            },
+            "formsPage" : {
+                "basePath" : "components/angular/formsPage",
+                "html" : "formsPage.html"
+            },
+            "directivesPage" : {
+                "basePath" : "components/angular/directivesPage",
+                "html" : "directivesPage.html"
             }
+           
         }
     }
 }
