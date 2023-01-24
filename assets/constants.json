@@ -62,6 +62,10 @@
             "directivesPage" : {
                 "basePath" : "components/angular/directivesPage",
                 "html" : "directivesPage.html"
+            },
+            "pipePage" : {
+                "basePath" : "components/angular/pipePage",
+                "html" : "pipePage.html"
             }
            
         }

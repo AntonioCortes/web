@@ -69,6 +69,10 @@
                 {
                     "text" : "Directivas",
                     "content" : "angular.paths.directivesPage"
+                },
+                {
+                    "text" : "Pipes",
+                    "content" : "angular.paths.pipePage"
                 }
             ]
 
