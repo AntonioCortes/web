@@ -65,7 +65,7 @@ function changeContent(contentKey)
 function addCodeLineNumbers()
 {
 	$.each($('code'), function() {
-		this.innerHTML = this.innerText.trim();
+		this.innerHTML = this.innerHTML.trim();
 
 		const lineCount = this.innerHTML.match(/[^\n]*\n[^\n]*/gi).length
 		
