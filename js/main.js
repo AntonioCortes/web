@@ -128,3 +128,37 @@ function changeView(viewKey)
 
 	changeContent(viewKey + '.paths.' + view.mainContent);
 }
+
+
+// ===Change Theme===
+function changeTheme(){	
+	// Default Style Paths
+	const defaultStylePathNav = "css/navbar.css";
+	const defaultStylePathContent = "css/content.css";
+	const defaultStylePathSidebar = "css/sidebar.css";
+	const defaultStylePathGeneral = "css/general-style.css";
+
+	// Dark Style Paths
+	const darkStylePathNav = "css/dark-theme/navbar.css";
+	const darkStylePathContent = "css/dark-theme/content.css";
+	const darkStylePathSidebar = "css/dark-theme/sidebar.css";
+	const darkStylePathGeneral = "css/dark-theme/general-style.css";
+
+
+	if($('#themeButton').attr("status") == "light-theme"){
+		$('#navbarTheme').attr("href",darkStylePathNav)
+		$('#contentTheme').attr("href",darkStylePathContent)
+		$('#sidebarTheme').attr("href",darkStylePathSidebar)
+		$('#generalStyleTheme').attr("href",darkStylePathGeneral)
+
+		$('#themeButton').attr("status","dark-theme")
+	}else if($('#themeButton').attr("status") == "dark-theme"){
+		$('#navbarTheme').attr("href",defaultStylePathNav)
+		$('#contentTheme').attr("href",defaultStylePathContent)
+		$('#sidebarTheme').attr("href",defaultStylePathSidebar)
+		$('#generalStyleTheme').attr("href",defaultStylePathGeneral)
+
+		$('#themeButton').attr("status","light-theme")
+	}
+}
+// ================

@@ -9,6 +9,11 @@
     min-height: 100%;
     transition: all 0.3s;
     overflow: auto;
+    margin: 15px 15px 0px 15px;
+    border: 5px solid #212529;
+    border-radius: 4px;
+    background-color: #212529;
+    color: white;
 }
 
 #content h1{
@@ -31,6 +36,8 @@
     font-size: 1.1em;
     line-height: 1.7em;
     color: #000000;
+    color: white;
+
 }
 
 #content p {
@@ -82,3 +89,55 @@
         width: 100%;
     }
 }
+
+th,td{
+    color: white !important;
+}
+
+b{
+    color: #1599ea;
+}
+
+/* ====ScrollBar==== */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #181818; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00e1ff; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #008697; 
+  }
+
+
+
+/* Scroll in code */
+  pre ::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  /* Track */
+  pre ::-webkit-scrollbar-track {
+    background: #272822; 
+  }
+   
+  /* Handle */
+  pre ::-webkit-scrollbar-thumb {
+    background: #00e1ff; 
+  }
+  
+  /* Handle on hover */
+  pre ::-webkit-scrollbar-thumb:hover {
+    background: #008697; 
+  }
+  /* ============================ */

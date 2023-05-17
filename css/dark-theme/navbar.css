@@ -30,12 +30,12 @@
     border: none;
     border-radius: 20px;
     outline: none;
-    background-color: #00e1ff;
+    background-color: #ffc400;
     color: white;
     cursor: pointer;
     padding: 7px;
   }
 
   #themeButton:active{
-    background-color: #008697;
+    background-color: #9d7800;
   }
