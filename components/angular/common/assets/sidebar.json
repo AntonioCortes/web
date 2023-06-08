@@ -6,19 +6,19 @@
             "content" : [
                 {
                     "text" : "Introducción",
-                    "content" : "angular.paths.introductionPage"
+                    "content" : "angular.paths.introduction"
                 },
                 {
                     "text" : "Estructura",
-                    "content" : "angular.paths.structurePage"
+                    "content" : "angular.paths.structure"
                 },
                 {
                     "text" : "CLI (Command Line Interface)",
-                    "content" : "angular.paths.cliPage"
+                    "content" : "angular.paths.cli"
                 },
                 {
                     "text" : "Configuración",
-                    "content" : "angular.paths.configPage"
+                    "content" : "angular.paths.config"
                 }
             ]
 
@@ -29,31 +29,31 @@
             "content" : [
                 {
                     "text" : "Componentes",
-                    "content" : "angular.paths.componentsPage"
+                    "content" : "angular.paths.components"
                 },
                 {
                     "text" : "Modulos",
-                    "content" : "angular.paths.modulesPage"
+                    "content" : "angular.paths.modules"
                 },
                 {
                     "text" : "Servicios",
-                    "content" : "angular.paths.servicesPage"
+                    "content" : "angular.paths.services"
                 },
                 {
                     "text" : "Guards",
-                    "content" : "angular.paths.guardsPage"
+                    "content" : "angular.paths.guards"
                 },
                 {
                     "text" : "Enrutamiento",
-                    "content" : "angular.paths.routerPage"
+                    "content" : "angular.paths.router"
                 },
                 {
                     "text" : "Modelo",
-                    "content" : "angular.paths.modelPage"
+                    "content" : "angular.paths.model"
                 },
                 {
                     "text" : "Tests",
-                    "content" : "angular.paths.testPage"
+                    "content" : "angular.paths.test"
                 }
             ]
 
@@ -64,15 +64,15 @@
             "content" : [
                 {
                     "text" : "Formularios",
-                    "content" : "angular.paths.formsPage"
+                    "content" : "angular.paths.forms"
                 },
                 {
                     "text" : "Directivas",
-                    "content" : "angular.paths.directivesPage"
+                    "content" : "angular.paths.directives"
                 },
                 {
                     "text" : "Pipes",
-                    "content" : "angular.paths.pipePage"
+                    "content" : "angular.paths.pipe"
                 }
             ]
 

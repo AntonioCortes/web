@@ -7,65 +7,65 @@
     },
     "angular" : {
         "topic" : "Angular",
-        "mainContent" : "introductionPage",
+        "mainContent" : "introduction",
         "paths" : {
             "logo" : "components/angular/common/assets/img/angular-icon.png",
             "sidebar" : "components/angular/common/assets/sidebar.json",
-            "introductionPage" : {
-                "basePath" : "components/angular/introductionPage",
-                "html" : "introductionPage.html"
+            "introduction" : {
+                "basePath" : "components/angular/introduction",
+                "html" : "introduction.html"
             },
-            "structurePage" : {
-                "basePath" : "components/angular/structurePage",
-                "html" : "structurePage.html"
+            "structure" : {
+                "basePath" : "components/angular/structure",
+                "html" : "structure.html"
             },
-            "configPage" : {
-                "basePath" : "components/angular/configPage",
-                "html" : "configPage.html"
+            "config" : {
+                "basePath" : "components/angular/config",
+                "html" : "config.html"
             },
-            "componentsPage" : {
-                "basePath" : "components/angular/componentsPage",
-                "html" : "componentsPage.html"
+            "components" : {
+                "basePath" : "components/angular/components",
+                "html" : "components.html"
             },
-            "guardsPage" : {
-                "basePath" : "components/angular/guardsPage",
-                "html" : "guardsPage.html"
+            "guards" : {
+                "basePath" : "components/angular/guards",
+                "html" : "guards.html"
             },
-            "modulesPage" : {
-                "basePath" : "components/angular/modulesPage",
-                "html" : "modulesPage.html"
+            "modules" : {
+                "basePath" : "components/angular/modules",
+                "html" : "modules.html"
             },
-            "servicesPage" : {
-                "basePath" : "components/angular/servicesPage",
-                "html" : "servicesPage.html"
+            "services" : {
+                "basePath" : "components/angular/services",
+                "html" : "services.html"
             },
-            "testPage" : {
-                "basePath" : "components/angular/testPage",
-                "html" : "testPage.html"
+            "test" : {
+                "basePath" : "components/angular/test",
+                "html" : "test.html"
             },
-            "cliPage" : {
-                "basePath" : "components/angular/cliPage",
-                "html" : "cliPage.html"
+            "cli" : {
+                "basePath" : "components/angular/cli",
+                "html" : "cli.html"
             },
-            "modelPage" : {
-                "basePath" : "components/angular/modelPage",
-                "html" : "modelPage.html"
+            "model" : {
+                "basePath" : "components/angular/model",
+                "html" : "model.html"
             },
-            "routerPage" : {
-                "basePath" : "components/angular/routerPage",
-                "html" : "routerPage.html"
+            "router" : {
+                "basePath" : "components/angular/router",
+                "html" : "router.html"
             },
-            "formsPage" : {
-                "basePath" : "components/angular/formsPage",
-                "html" : "formsPage.html"
+            "forms" : {
+                "basePath" : "components/angular/forms",
+                "html" : "forms.html"
             },
-            "directivesPage" : {
-                "basePath" : "components/angular/directivesPage",
-                "html" : "directivesPage.html"
+            "directives" : {
+                "basePath" : "components/angular/directives",
+                "html" : "directives.html"
             },
-            "pipePage" : {
-                "basePath" : "components/angular/pipePage",
-                "html" : "pipePage.html"
+            "pipe" : {
+                "basePath" : "components/angular/pipe",
+                "html" : "pipe.html"
             }
            
         }
