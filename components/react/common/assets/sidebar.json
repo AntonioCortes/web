@@ -1,0 +1,79 @@
+{
+    "pageContent" : [
+        {
+            "text" : "Conceptos básicos",
+            "contentId" : "basics",
+            "content" : [
+                {
+                    "text" : "Introducción",
+                    "content" : "react.paths.introduction"
+                },
+                {
+                    "text" : "Estructura",
+                    "content" : "react.paths.structure"
+                },
+                {
+                    "text" : "CLI (Command Line Interface)",
+                    "content" : "react.paths.cli"
+                },
+                {
+                    "text" : "Configuración",
+                    "content" : "react.paths.config"
+                }
+            ]
+
+        },
+        {
+            "text" : "Elementos principales",
+            "contentId" : "mainContent",
+            "content" : [
+                {
+                    "text" : "Componentes",
+                    "content" : "react.paths.components"
+                },
+                {
+                    "text" : "Listas y condicionales",
+                    "content" : "react.paths.conditionals-lists"
+                },
+                {
+                    "text" : "Hooks",
+                    "content" : "react.paths.hooks"
+                },
+                {
+                    "text" : "JSX",
+                    "content" : "react.paths.jsx"
+                },
+                {
+                    "text" : "Prop & State",
+                    "content" : "react.paths.props-state"
+                },
+                {
+                    "text" : "Eventos",
+                    "content" : "react.paths.events"
+                }
+            ]
+
+        },
+        {
+            "text" : "Elementos secundarios",
+            "contentId" : "mainContent",
+            "content" : [
+                {
+                    "text" : "Formularios",
+                    "content" : "react.paths.forms"
+                },
+                {
+                    "text" : "HTTP",
+                    "content" : "react.paths.http"
+                }
+            ]
+
+        }
+    ],
+    "links" : [
+        {
+            "text" : "Página oficial",
+            "href" : "https://es.react.dev/"
+        }
+    ]
+}

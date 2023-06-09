@@ -69,5 +69,50 @@
             }
            
         }
+    },
+    "react" : {
+        "topic" : "React",
+        "mainContent" : "introduction",
+        "paths" : {
+            "logo" : "components/react/common/assets/img/react-logo.png",
+            "sidebar" : "components/react/common/assets/sidebar.json",
+            "introduction" : {
+                "basePath" : "components/react/introduction",
+                "html" : "introduction.html"
+            },
+            "components" : {
+                "basePath" : "components/react/components",
+                "html" : "components.html"
+            },
+            "jsx" : {
+                "basePath" : "components/react/jsx",
+                "html" : "jsx.html"
+            },
+            "forms" : {
+                "basePath" : "components/react/forms",
+                "html" : "forms.html"
+            },
+            "conditionals-lists" : {
+                "basePath" : "components/react/conditionals-lists",
+                "html" : "conditionals-lists.html"
+            },
+            "events" : {
+                "basePath" : "components/react/events",
+                "html" : "events.html"
+            },
+            "hooks" : {
+                "basePath" : "components/react/hooks",
+                "html" : "hooks.html"
+            },
+            "http" : {
+                "basePath" : "components/react/http",
+                "html" : "http.html"
+            },
+            "props-state" : {
+                "basePath" : "components/react/props-state",
+                "html" : "props-state.html"
+            }
+           
+        }
     }
 }
