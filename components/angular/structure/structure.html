@@ -1,2 +1,160 @@
 <h1 class="title">Estructura</h1>
-TODO:
+
+<h2>Estrucura básica</h2>
+<p>La estructura básica de un proyecto es:</p>
+
+<div class="filetree">
+    <div class="file">
+        /
+    </div>
+    <div class="children">
+        <div class="file">
+            .gitignore
+        </div>
+        <div class="file">
+            README.md
+        </div>
+        <div class="file">
+            package.json
+        </div>
+        <div class="file">
+            tsconfig.json
+        </div>
+        <div class="file">
+            angular.json
+        </div>
+        <div class="file">
+            package-lock.json
+        </div>
+        <div class="file">
+            /node_modules
+        </div>
+        <div class="children">
+            <div class="file">
+                ...
+            </div>
+        </div>
+        <div class="file">
+            /src
+        </div>
+        <div class="children">
+            <div class="file">
+                /app
+            </div>
+            <div class="children">
+                <div  class="file">
+                    /components
+                </div>
+                <div  class="file">
+                    /guards
+                </div>
+                <div  class="file">
+                    /services
+                </div>
+                <div  class="file">
+                    /models
+                </div>
+                <div  class="file">
+                    app.config.ts
+                </div>
+                <div  class="file">
+                    app.component.ts
+                </div>
+                <div  class="file">
+                    app.component.html
+                </div>
+                <div  class="file">
+                    app.component.css
+                </div>
+                <div  class="file">
+                    app.component.spec.ts
+                </div>
+                <div  class="file">
+                    app.module.ts
+                </div>
+            </div>
+            <div class="file">
+                /assets
+            </div>
+            <div class="file">
+                /vendor
+            </div>
+            <div class="file">
+                favicon.ico
+            </div>
+            <div class="file">
+                index.html
+            </div>
+            <div class="file">
+                main.ts
+            </div>
+            <div class="file">
+                styles.css
+            </div>
+        </div>
+    </div>
+</div>
+<p>En la raiz:</p>
+<ul>
+    <li><b>angular.json:</b> CLI configuration defaults for all projects in the workspace, including configuration options for build, serve, and test tools that the CLI uses, such as Karma, and Protractor.</li>
+    <li><b>package.json:</b> Configures npm package dependencies that are available to all projects in the workspace. See npm documentation for the specific format and contents of this file.</li>
+    <li><b>package-lock.json:</b> Provides version information for all packages installed into node_modules by the npm client.</li>
+    <li><b>node_modules:</b> Provides npm packages to the entire workspace.</li>
+    <li><b>tsconfig.json:</b> The base TypeScript configuration for projects in the workspace. All other configuration files inherit from this base file.</li>
+</ul>
+<p>Dentro de /src:</p>
+<ul>
+    <li><b>app:</b> Contains the component files in which your application logic and data are defined.</li>
+    <li><b>assets:</b> Contains image and other asset files to be copied as-is when you build your application.</li>
+    <li><b>favicon.ico:</b> An icon to use for this application in the bookmark bar.</li>
+    <li><b>main.ts:</b> The main entry point for your application. Compiles the application with the JIT compiler and bootstraps the application's root module (AppModule) to run in the browser. You can also use the AOT compiler without changing any code by appending the --aot flag to the CLI build and serve commands.</li>
+</ul>
+<p>Dentro de /app:</p>
+<ul>
+    <li><b>app.config.ts:</b> Defines the application config logic that tells Angular how to assemble the application. As you add more providers to the app, they must be declared here.</li>
+    <li><b>app.component.ts:</b> Defines the logic for the application's root component, named AppComponent. The view associated with this root component becomes the root of the view hierarchy as you add components and services to your application.</li>
+    <li><b>app.component.html:</b> Defines the HTML template associated with the root AppComponent.</li>
+    <li><b>app.component.css:</b> Defines the base CSS stylesheet for the root AppComponent.</li>
+    <li><b>app.component.spec.ts:</b> Defines a unit test for the root AppComponent.</li>
+    <li><b>app.module.ts:</b> Defines the root module, named AppModule, that tells Angular how to assemble the application. Initially declares only the AppComponent. As you add more components to the app, they must be declared here.</li>
+</ul>
+
+<h2>Estructura de un proyecto múltiple</h2>
+
+<div class="filetree">
+    <div class="file">
+        my-workspace
+    </div>
+    <div class="children">
+        <div class="file">
+          … &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (workspace-wide config files)
+        </div>
+        <div class="file">
+          projects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (generated applications and libraries)
+        </div>
+        <div class="children">
+            <div class="file">
+              my-first-app &nbsp; --(an explicitly generated application)
+            </div>
+            <div class="children">
+                <div class="file">
+                  … &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --(application-specific config)
+                </div>
+                <div class="file">
+                  src &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --(source and support files for application)
+                </div>
+            </div>
+            <div class="file">
+              my-lib &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --(a generated library)
+            </div>
+            <div class="children">
+                <div class="file">
+                  … &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --(library-specific config)
+                </div>
+                <div class="file">
+                  src &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --(source and support files for library)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

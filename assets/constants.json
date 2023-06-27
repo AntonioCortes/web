@@ -17,7 +17,8 @@
             },
             "structure" : {
                 "basePath" : "components/angular/structure",
-                "html" : "structure.html"
+                "html" : "structure.html",
+                "css" : "structure.css"
             },
             "config" : {
                 "basePath" : "components/angular/config",
