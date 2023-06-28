@@ -1,2 +1,32 @@
 <h1 class="title">Guards</h1>
-TODO:
+
+<p>Ejemplo de guard:</p>
+
+<div class="center-horizontal">
+<pre><code class="language-typescript">
+import { Injectable } from '@angular/core';
+import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from '@angular/router';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AccessGuard implements CanActivate {
+
+  constructor(private router:Router){
+
+  }
+
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot): boolean{
+      if(sessionStorage.getItem("loged") != "true"){
+        this.router.navigate(['/']);
+        return false;
+      }else{
+        return true;
+      }
+  }
+  
+}
+</code></pre>	
+</div>
