@@ -1,2 +1,80 @@
 <h1 class="title">Modulos</h1>
-TODO:
+
+<h2>Exportación de módulos</h2>
+
+<p>Ejemplo de exportación de componente mediante el uso de módulos</p>
+
+<p>Para el siguiente componente <b>PokeSpriteComponent(Átomo)</b> con Ts:</p>
+
+<div class="center-horizontal">
+<pre><code class="language-typescript">
+@Component({
+    selector: 'app-poke-sprite',
+    templateUrl: './poke-sprite.component.html',
+    styleUrls: ['./poke-sprite.component.css']
+  })
+  export class PokeSpriteComponent implements OnInit {
+    ...
+  }
+</code></pre>	
+</div>
+
+<p>En el módulo de tiene que especificar la exportación de la siguiente forma:</p>
+
+<div class="center-horizontal">
+<pre><code class="language-typescript">
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { PokeSpriteComponent } from './poke-sprite.component';
+
+@NgModule({
+  declarations: [PokeSpriteComponent],
+  exports:[
+    PokeSpriteComponent
+  ],
+  imports: [
+    CommonModule
+  ]
+})
+export class PokeSpriteModule { }
+</code></pre>	
+</div>
+
+<h2>Importación de componentes mediante el uso de módulos</h2>
+
+<p>Para importar un componete se referencia el módulo<b>(PokeSpriteModule)</b> en el cual se exporta</p>
+
+<p>Ejemplo:</p>
+
+<div class="center-horizontal">
+<pre><code class="language-typescript">
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { PokeSpriteModule } from '../../atoms/poke-sprite/poke-sprite.module';
+import { PokeSpriteMoleculeComponent } from './poke-sprite-molecule.component';
+
+
+
+@NgModule({
+  declarations: [PokeSpriteMoleculeComponent],
+  exports:[
+    PokeSpriteMoleculeComponent
+  ],
+  imports: [
+    CommonModule,
+    PokeSpriteModule
+  ]
+})
+export class PokeSpriteMoleculeModule { }
+</code></pre>	
+</div>
+
+<p>De esta forma el componente <b>PokeSpriteComponent(Átomo)</b> puede ser utilizado por el componente superior <b>PokeSpriteMoleculeComponent(Molecule)</b></p>
+
+<div class="center-horizontal">
+<pre><code class="language-html">
+...
+&lt;app-poke-sprite [src]=src&gt;&lt;/app-poke-sprite&gt;
+...
+</code></pre>	
+</div>

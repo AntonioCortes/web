@@ -13,8 +13,6 @@ import { ArcadeButtonModule } from '../../atoms/arcade-button/arcade-button.modu
 import { ReactiveFormsModule } from '@angular/forms';
 import { DisplayContentPokedexModule } from '../../molecules/display-content-pokedex/display-content-pokedex.module';
 
-
-
 @NgModule({
   declarations: [FormPokedexComponent],
   exports:[
@@ -41,7 +39,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from "@angular/forms";
 import { DataPokeService } from 'src/app/services/data-poke.service';
 
-
 @Component({
   selector: 'app-form-pokedex',
   templateUrl: './form-pokedex.component.html',
@@ -53,7 +50,6 @@ export class FormPokedexComponent implements OnInit {
   text!:string;
   src!:string;
   name!:string;
-
 
   formPoke = new FormGroup(
     {
