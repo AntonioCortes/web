@@ -1,2 +1,162 @@
 <h1 class="title">Componentes</h1>
-TODO:
+
+<h2>Módulo</h2>
+
+<p>Ejemplo de <b>form-pokedex.module.ts</b></p>
+
+<div class="center-horizontal">
+<pre><code class="language-typescript">
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormPokedexComponent } from './form-pokedex.component';
+import { ArcadeButtonModule } from '../../atoms/arcade-button/arcade-button.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DisplayContentPokedexModule } from '../../molecules/display-content-pokedex/display-content-pokedex.module';
+
+
+
+@NgModule({
+  declarations: [FormPokedexComponent],
+  exports:[
+    FormPokedexComponent,
+  ],
+  imports: [
+    CommonModule,
+    ArcadeButtonModule,
+    DisplayContentPokedexModule,
+    ReactiveFormsModule
+  ]
+})
+export class FormPokedexModule { }
+</code></pre>	
+</div>
+
+<h2>TypeScript</h2>
+
+<p>Ejemplo de <b>form-pokedex.component.ts</b></p>
+
+<div class="center-horizontal">
+<pre><code class="language-typescript">
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from "@angular/forms";
+import { DataPokeService } from 'src/app/services/data-poke.service';
+
+
+@Component({
+  selector: 'app-form-pokedex',
+  templateUrl: './form-pokedex.component.html',
+  styleUrls: ['./form-pokedex.component.css']
+})
+export class FormPokedexComponent implements OnInit {
+
+  formName!:string;
+  text!:string;
+  src!:string;
+  name!:string;
+
+
+  formPoke = new FormGroup(
+    {
+      inputPoke: new FormControl
+    }
+  );
+
+  constructor(private dataPokeService: DataPokeService ) { }
+
+  ngOnInit(): void {
+    this.text = "Buscar!";
+    this.formName = "inputPoke";
+  }
+
+  async onSubmit(){
+    console.log(this.formPoke.value.inputPoke);
+    let data!: string[];
+    
+    let response = await this.dataPokeService.getPokeById(this.formPoke.value.inputPoke).subscribe((response: any) => {
+      this.src = response.sprites.versions['generation-i'].yellow.front_default;
+      this.name = response.name;
+    });
+  }
+}
+</code></pre>	
+</div>
+
+<h2>HTML</h2>
+
+<p>Ejemplo de <b>form-pokedex.component.html</b></p>
+
+<div class="center-horizontal">
+<pre><code class="language-html">
+&lt;form class="form-pokedex" [formGroup]="formPoke" method="post" (ngSubmit)="onSubmit()"&gt;
+    &lt;!-- &lt;app-arcade-input name="inputPoke" [formName]=formName&gt;&lt;/app-arcade-input&gt; --&gt;
+    &lt;input id="inputPoke" formControlName="inputPoke" name="inputBox" class="arcade-box" type="text" placeholder='Number or Name'&gt;
+    &lt;app-arcade-button [buttonText]=text&gt;&lt;/app-arcade-button&gt;
+&lt;/form&gt;
+&lt;app-display-content-pokedex class="display" [name]=name [src]=src&gt;&lt;/app-display-content-pokedex&gt;  
+</code></pre>	
+</div>
+
+<h2>CSS</h2>
+
+<p>Ejemplo de <b>form-pokedex.component.css</b></p>
+
+<div class="center-horizontal">
+<pre><code class="language-css">
+.form-pokedex{
+    background-color: white;
+    color: black;
+    font-family: "Press Start 2P";
+    box-shadow: 5px 5px black;
+    border: double 8px black;
+}
+.arcade-box {
+    background-color: white;
+    color: black;
+    font-family: "Press Start 2P";
+    box-shadow: 5px 5px black;
+    border: double 8px black;
+    margin: 20px
+}
+
+input.arcade-box:focus-visible {
+    outline: none;
+}
+
+.display{
+    text-align: center;
+    color: black;
+    font-family: "Press Start 2P";
+}
+</code></pre>	
+</div>
+
+<h2>Test</h2>
+
+<p>Ejemplo de <b>form-pokedex.component.spec.ts</b></p>
+
+<div class="center-horizontal">
+<pre><code class="language-typescript">
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormPokedexComponent } from './form-pokedex.component';
+
+describe('FormPokedexComponent', () => {
+  let component: FormPokedexComponent;
+  let fixture: ComponentFixture<FormPokedexComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ FormPokedexComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(FormPokedexComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+</code></pre>	
+</div>
