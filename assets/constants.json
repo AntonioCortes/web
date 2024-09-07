@@ -15,6 +15,10 @@
                 "basePath" : "components/angular/introduction",
                 "html" : "introduction.html"
             },
+            "createProject" : {
+                "basePath" : "components/angular/create-project",
+                "html" : "create-project.html"
+            },
             "structure" : {
                 "basePath" : "components/angular/structure",
                 "html" : "structure.html",
